@@ -49,3 +49,27 @@ function areaCirculo(radio){
 }
 console.groupEnd();
 //------------------------------------------------------------------------------------------------
+
+
+// Para acoplar el html con javascript. Creamos un atributo que se llama onclick y su valor
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById('inputCuadrado');
+    const value = input.value; 
+
+
+    const perimetro = perimetroCuadrado(value);
+    alert (`el perimetro del cuadrado equivale a ${perimetro}`)
+    
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById('inputCuadrado');
+    const value = input.value; 
+
+
+    const area = areaCuadrado(value);
+    alert (`el area del cuadrado equivale a ${area}cm^2`)
+}
+
+// document.getElementById(" id del elemento") 
