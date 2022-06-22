@@ -73,3 +73,38 @@ function calcularAreaCuadrado(){
 }
 
 // document.getElementById(" id del elemento") 
+
+function calcularPerimetroTriangulo(){
+    
+    const lado1 = document.getElementById("lado1Triangulo");
+    const lado2 = document.getElementById("lado2Triangulo");
+    const base =  document.getElementById("baseTriangulo");
+    const valueLado1 = parseInt(lado1.value);
+    const valueLado2 = parseInt(lado2.value);
+    const valueBase2 = parseInt(base.value);
+
+    const perimetro = perimetroTriangulo(valueLado1, valueLado2, valueBase2);
+    
+
+    alert(perimetro);
+
+}
+
+function calcularAreaTriangulo(){
+    const altura = document.getElementById("alturaTriangulo");
+    const base = document.getElementById("baseTriangulo");
+    const valueAltura = parseInt(altura.value);
+    const valueBase = parseInt(base.value);
+
+    const area2 = areaTriangulo(valueAltura, valueBase);
+    alert(area2);
+
+}
+/*# circulo:
+    -elementos: pi: 3.1416, d diametro, r radio
+    -formula radio = d * 2
+    -formula perimetro: P = d * pi
+    -formula area: A = pi * r^2 */
+
+
+
