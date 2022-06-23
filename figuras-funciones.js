@@ -59,7 +59,7 @@ function calcularPerimetroCuadrado(){
 
 
     const perimetro = perimetroCuadrado(value);
-    alert (`el perimetro del cuadrado equivale a ${perimetro}`)
+    alert (`el perimetro del cuadrado equivale a ${perimetro.toFixed(1)}`)
     
 }
 
@@ -69,7 +69,7 @@ function calcularAreaCuadrado(){
 
 
     const area = areaCuadrado(value);
-    alert (`el area del cuadrado equivale a ${area}cm^2`)
+    alert (`el area del cuadrado equivale a ${area.toFixed(1)}cm^2`)
 }
 
 // document.getElementById(" id del elemento") 
@@ -86,7 +86,7 @@ function calcularPerimetroTriangulo(){
     const perimetro = perimetroTriangulo(valueLado1, valueLado2, valueBase2);
     
 
-    alert(perimetro);
+    alert(perimetro.toFixed(1));
 
 }
 
@@ -97,9 +97,25 @@ function calcularAreaTriangulo(){
     const valueBase = parseInt(base.value);
 
     const area2 = areaTriangulo(valueAltura, valueBase);
-    alert(area2);
+    alert(area2.toFixed(1));
 
 }
+
+function calcularPerimetroCirculo() {
+    const radio = document.getElementById("inputRadio")
+    const diametro = radio.value * 2;
+    const perimetro = diametro * PI;
+
+    alert(`El perimetro del circulo equivale a ${perimetro.toFixed(2)}`);
+}
+
+function calcularAreaCirculo(){
+    const radio = document.getElementById("inputRadio");
+    const area = PI * (radio.value * radio.value);
+
+    alert(`El area del circulo equivale a: ${area.toFixed(2)}`);
+}
+
 /*# circulo:
     -elementos: pi: 3.1416, d diametro, r radio
     -formula radio = d * 2
