@@ -116,11 +116,30 @@ function calcularAreaCirculo(){
     alert(`El area del circulo equivale a: ${area.toFixed(2)}`);
 }
 
-/*# circulo:
-    -elementos: pi: 3.1416, d diametro, r radio
-    -formula radio = d * 2
-    -formula perimetro: P = d * pi
-    -formula area: A = pi * r^2 */
+
+
+
+const lado1Isosceles = document.getElementById('lado1');
+const lado1 = parseInt(lado1Isosceles.value);
+const lado2Isosceles = document.getElementById('lado2');
+const lado2 = parseInt(lado2Isosceles.value);
+const baseIsosceles = document.getElementById('ladoDiferente');
+const baseIso = parseInt(baseIsosceles.value);
+
+
+
+function verificarIsosceles() {
+    if(lado1 === lado2 && lado1 != baseIso) {
+        const altura = Math.sqrt(lado1**2 - baseIso**2/4) // h = raiz de a^2 - (b^2 / 4)
+        alert(`Si es un triángulo isósceles con una altura de ${altura.toFixed(1)}`);
+    } else {
+        alert("No es un triángulo isósceles")
+    }
+}
+
+
+
+
 
 
 
