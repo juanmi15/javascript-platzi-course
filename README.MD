@@ -1,4 +1,3 @@
-ruta: file://///wsl$/Ubuntu/home/juanmi15/newProjects/js-practica
 
 # platzi-curso-practico-javascript
 
